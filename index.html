@@ -1,0 +1,57 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOGIN_PAGE</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="flex">
+        <div class="main_container row-flex-all-center">
+            <div class="logo"><img src="/images/PngItem_6510519.png" alt="LOGO"></div>
+            <div class="inputs-box row-flex-all-center">
+                <input type="text" placeholder="Email or phone number">
+                <input type="text" placeholder="Password">
+                <button class="login-btn" onclick="openpopup()">Login</button>
+                
+                <div class="devider">
+                    <span>Or Login With</span>
+                </div>
+                <div class="login_with">
+                    <img src="/images/pngkit_follow-us-on-facebook_2306034.png" alt="FACEBOOK">
+                    <img src="/images/pngegg.png" alt="TWITEER" class="nth">
+                    <img src="/images/[CITYPNG.COM]Google Logo Icon Gsuite HD - 2000x2000.png" alt="GOOGLE">
+                </div>
+                <div class="para">
+                    <p>By continuing you ogree to abz coder's <br>
+                        <a href="#" class="span">Terms of Service</a> and acknowledge that you've <br>
+                        read our <a href="#" class="span">Privacy Policy</a>
+                    </p>
+                </div>
+                <div class="ques">
+                    <p>Forgot Your Password?</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="popup" id="popup">
+        <img src="/images/404-tick.png">
+        <h2>Thank You</h2>
+        <p>your details has been successfully submitted.Thanks!</p>
+        <button class="oka" type="button" onclick="closepopup()">OK</button>
+</div>
+<script>
+    let popup = document.getElementById("popup");
+    function openpopup(){
+        popup.classList.add("open-popup");
+    }
+    function closepopup(){
+        popup.classList.remove("open-popup");
+    }
+</script>
+</body>
+
+</html>
